@@ -1,0 +1,17 @@
+pipeline{
+agent any
+stages{
+stage('checkout'){
+steps{
+git branch:'main', url:'https://github.com/mashood17/lijo.git'
+}
+}
+stage('Hello'){
+steps{
+echo "hello from jenkins pipeine"
+}
+}
+stage('goodbye'){
+steps{
+echo "Pipeline finished successfully"
+}}}}
